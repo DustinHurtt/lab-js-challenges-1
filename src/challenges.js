@@ -1,62 +1,105 @@
 // Iteration 1 | Count Repetition
-const repeatedWords = [
-  "machine",
-  "matter",
-  "subset",
-  "trouble",
-  "starting",
-  "matter",
-  "eating",
-  "matter",
-  "truth",
-  "disobedience",
-  "matter"
-];
+// const repeatedWords = [
+//   "machine",
+//   "matter",
+//   "subset",
+//   "trouble",
+//   "starting",
+//   "matter",
+//   "eating",
+//   "matter",
+//   "truth",
+//   "disobedience",
+//   "matter"
+// ];
 
-function howManyTimes() {}
+function howManyTimes(array, word) {
+  let counter = 0
+  array.forEach((element) => {
+    if (element === word) {
+      counter++
+    }
+  })
+  return counter
+}
 
 
 
 
 // Iteration 2 | Number Sequence
-function createSequence() {}
+function createSequence(number) { 
+
+  let counter = 0
+  let array = []
+
+  while (number >= counter && number ) {
+    array.push(counter)
+    counter++
+  }
+
+  return array
+
+}
 
 
 
 
 // Iteration 3 | Multiply for Each
-const numbers = [1, 2, 5, 10, 13, 50];
+// const numbers = [1, 2, 5, 10, 13, 50];
 
-function multiplyBy() {}
+function multiplyBy(numbers, multiplier) {
+
+  numbers.forEach((number, i, arr) => {
+    arr[i] = number * multiplier
+  })
+
+  return numbers
+
+}
 
 
 
 
 // Iteration 4 | Filter Out
-const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
-const toRemove = ["cat", "dog"];
+// const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
+// const toRemove = ["cat", "dog"];
 
-function filterOut() {}
+function filterOut(array, toRemove) {
+
+  return array.length ? array.filter((word) => !toRemove.includes(word)) : null
+}
 
 
 
 
 // Iteration 5 | Unique Arrays
-const duplicateWords = [
-  "crab",
-  "poison",
-  "contagious",
-  "simple",
-  "bring",
-  "sharp",
-  "playground",
-  "poison",
-  "communion",
-  "simple",
-  "bring"
-];
+// const duplicateWords = [
+//   "crab",
+//   "poison",
+//   "contagious",
+//   "simple",
+//   "bring",
+//   "sharp",
+//   "playground",
+//   "poison",
+//   "communion",
+//   "simple",
+//   "bring"
+// ];
 
-function uniquifyArray() {}
+function uniquifyArray(array) {
+  
+  let newArray = []
+
+  array.forEach((word) => {
+    if (!newArray.includes(word)) {
+      newArray.push(word)
+    }
+  })
+
+return newArray.length ? newArray : null
+
+}
 
 
 
